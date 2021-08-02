@@ -1,0 +1,58 @@
+body{
+    width: 300px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+	background: rgb(51, 0, 109);
+	color: inherit;
+	border: 1px;
+	padding: 8px;
+    border-radius: 5px;
+	font: inherit;
+	outline: inherit;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:disabled{
+    background: rgb(205, 160, 255);
+    pointer-events: none;
+}
+
+ul{
+    width: 80%;
+}
+
+li{
+    list-style-type: none;
+    border-bottom: 1px rgb(110, 110, 110) solid;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+li span{
+    padding: 0px 5px 0px 5px;
+}
+
+.striked{
+    text-decoration: line-through;
+    opacity: 70%;
+}
+
+.deleteTaskEmoji, .taskStatusEmoji{
+    cursor: pointer;
+}
